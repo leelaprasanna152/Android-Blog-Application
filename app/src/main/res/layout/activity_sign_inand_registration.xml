@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_goneMarginTop="200dp"
+    tools:context=".SignInandRegistrationActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="395dp"
+        android:layout_height="728dp"
+
+        android:alpha="0.1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/love_ya_like_a_sister"
+        android:text="BLOG"
+        android:textColor="#1B1B1A"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="285dp"
+        android:layout_height="84dp"
+        android:fontFamily="@font/love_ya_like_a_sister"
+        android:text="Share your story with us"
+        android:textAlignment="center"
+        android:textColor="#1B1B1A"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <EditText
+        android:id="@+id/login_EmailAddress"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="296dp"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="@font/love_ya_like_a_sister"
+        android:text="Login"
+        android:textColor="#1B1B1A"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_Password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_Password"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_goneMarginTop="200dp"
+        app:strokeColor="@color/red"
+        app:strokeWidth="2dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/register_new_here"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:fontFamily="@font/love_ya_like_a_sister"-->
+<!--        android:text="New Here?"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#1B1B1A"-->
+<!--        android:textSize="15sp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/register_password"-->
+<!--        app:layout_constraintHorizontal_bias="0.443"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/register_password"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.754" />-->
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@android:color/transparent"
+        android:fontFamily="@font/love_ya_like_a_sister"
+        android:text="Register"
+        android:textColor="#1B1B1A"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/register_password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_password"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2dp" />
+
+    <EditText
+        android:id="@+id/login_Password"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/login_EmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/login_EmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/login_EmailAddress" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="200dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/register_user_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_blue_shape"
+        android:ems="10"
+        android:fontFamily="@font/love_ya_like_a_sister"
+        android:gravity="center"
+        android:hint="Enter your Name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_blue_shape"
+        android:ems="10"
+        android:fontFamily="@font/love_ya_like_a_sister"
+        android:gravity="center"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/register_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/register_name"
+        app:layout_constraintTop_toBottomOf="@+id/register_name" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_blue_shape"
+        android:ems="10"
+        android:fontFamily="@font/love_ya_like_a_sister"
+        android:gravity="center"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/register_email"
+        app:layout_constraintStart_toStartOf="@+id/register_email"
+        app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
